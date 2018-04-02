@@ -16,6 +16,28 @@ step 1:- https://github.com/
 username :- ventak2019
 passwword:- ventak2018
 email :-venkataswamy.meka@gmail.com
+create an account.
 --------------------------------------------------------------------------
+step 2:- Git download and install
+
+https://git-scm.com/download
+----------------------------------------------------------------------------
+step 3:-create a folder go inside the folder ,right click ->GIT GUI here
+
+repository --->Git Bash
+-----------------------------------------
+step 4:- link git with github
+  git remote add origin "https://github.com/sandipmohapatra/sandip1.git"
+-------------------------------------------------------
+
+step 5:- git pull origin master
+-----------------------------------------------------------------
+
+
+
+
+
+
+
 
 
