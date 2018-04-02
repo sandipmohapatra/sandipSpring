@@ -32,6 +32,13 @@ step 4:- link git with github
 
 step 5:- git pull origin master
 -----------------------------------------------------------------
+step 6:- git status :- tells you which files are added to index and are ready commit.
+------------------------------------------------------------------
+step 7:- git add <list of file name> :- tells you to add files to your index.
+---------------------------------------------------------------------------
+step 8:-git commit -m "this is a message" :- the files are added to git.
+------------------------------------------------------------------------------------ 
+ 
 
 
 
