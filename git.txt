@@ -1,0 +1,21 @@
+Git and GitHub
+------------------------------
+GitHub is a central Reposistory.(private/public)
+Git is a local Reposistory.
+--------------------------------------------------------
+Git is a distributed revision control and source code management system.
+It is used to handle java and non java projects.
+uses :-
+1)allows developers to work simultaneously.
+2)doesnot allow overwrite each other's change.
+3)Maintains history of every version.It is a version control tool.
+4)git provides security (SHA1)
+5)It is fast,free and open source.
+--------------------------------------------------------------------------------------------------------
+step 1:- https://github.com/
+username :- ventak2019
+passwword:- ventak2018
+email :-venkataswamy.meka@gmail.com
+--------------------------------------------------------------------------
+
+
