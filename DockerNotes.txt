@@ -1,0 +1,64 @@
+Docker :-
+1)Docker is a s/w which provides centralized platform to execute you application.
+
+2)It wraps s/w components into a complete unit which contains everything required to run.
+
+3)They wrap (code+runtime environment +tools/libraries+server) .The s/w will run as normally it run.
+
+4)We have to create image of the s/w and store in the container.The s/w can be java,php,phython,perl,ruby etc.
+
+5)Docker provide the facility to run the application in a environment called container.
+
+6)The application are secure as they are isolated from one another.
+
+7)It uses less RAM and docker is lightweight.
+
+8)to get the script code :- https://hub.docker.com/php/java 
+
+9)It is useful to give the image/build to the client every time as we follow Agile model.
+
+10)So we have to parts in docker :- client and server
+-----------------------------------------------------------------------------------------------
+Docker Architecture
+-------------------------------
+1)client: Docker provides command line interface (cli) tools to click to interact with docker server.
+client perform task like :- 1)create build/image 2)run the application 3)stop the application
+
+2)Docker Host:- It has container,image,docker daemon.
+It has complete environment to execute and run your application.
+
+3)Registry :- It is the global repository of images.
+we can access and use this images to run our application in docker environment.
+
+----------------------------------------------
+
+client :- task performed are (build,pull,run)
+
+host:- have containers,images
+The execution of images will be done in the containers. 
+
+registry :- stores all the images 
+------------------------------------------------------
+flow of control :- 
+---------------------------
+client <---- Docker daemon <----Docker Registry
+
+1)client when execute command (docker run) the command goes to the docker daemon.it is processed there and communicate with docker registery where the image is stored .The docker host pulls the image from the registry .Then the run will execute.
+
+--------------------------------------------
+There are 2 types of docker registry which is public
+1)Docker cloud
+2)Docker Hub
+------------------------------------------------------------
+ Installation of Docker
+--------------------------------------
+https://www.docker.com/products/docker-toolbox
+
+
+
+
+
+
+
+
+
