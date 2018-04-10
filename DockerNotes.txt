@@ -54,6 +54,43 @@ There are 2 types of docker registry which is public
 --------------------------------------
 https://www.docker.com/products/docker-toolbox
 
+order of Installation
+First  - Docker Installer  
+Second - Docker Tool box 1.8.4
+----------------------------------------------------------------------------
+In docker we have container where the s/w,library files will be stored we can run our application from the container. 
+
+steps to execute our application :- java/php
+
+step 1 :- Hello.java
+
+step 2:- Dockerfile  (it will not have any extention)
+
+Dockerfile :-
+
+FROM java:8
+COPY ./var/www/java
+WORKDIR /var/www/java
+RUN javac Hello.java
+CMD ["java","Hello"]
+
+step 3:- docker build -t java-app .(it will create an image called java-app)
+
+step 4:- docker run java-app
+
+---------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Installation of Jenkins
+--------------------------------------
+It is a continuous integration tool.
+Jenkin will be installed on a server where the central build will take place.
+
+GitHub ----->Developers check their source code ------>Jinkins will pick up the changed source code and trigger a build and run any tests if required ------>The build will be available in the jenkins dashboards.--->Automatic message/notifications can also be send to the developers.
+
+https://jenkins-ci.org/
+
+
 
 
 
