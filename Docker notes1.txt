@@ -1,0 +1,113 @@
+Docker
+--------------
+1)Docker is a s/w which provides centralized platform to execute your application.
+
+steps:-
+i)Dockerfile
+ii)application file with extention(.java,.php,node.js)
+iii)create an image.
+iv)run the image.
+
+2)we have a container which contain a  every thing required to run.The container wrap code,runtime environment,tools/libraries ,server which are all required to run the application normally.
+
+3)We have to create image of our application and store it inside the container.
+
+4)we can run s/w developed in java,php,phython,perl,ruby,node.js etc.
+
+5)Our application will run in the container. Different storage location will be provided to each application.The applications are secured as they are isolated from one another.
+
+6)Docker uses less RAM and it is lightweight.
+
+7)Dockerfile is a script which contains the discription of sotware requirements with version,commands to run/execute the appliaction.
+
+8)we will take help of a site to get the code.
+ https://hub.docker.com/php/java/node
+
+example of a Docker script to run a java file.
+-------------------------------------------------------
+FROM java:8
+COPY . /var/www/java
+WORKDIR /var/www/java
+RUN javac Hello.java
+CMD ["java","Hello"]
+--------------------------------------------------
+9)to build a image :-
+docker build -t java-app . (java-app is a image name)
+----------------------------------
+10)to run the image 
+--------------------------
+docker run java-app
+ 
+----------------------------------------------------------------------------------------------------------------------
+php
+-----------
+Dockerfile
+--------------------
+FROM php:7.0-apache
+COPY . /var/www/php
+
+---------------------------------------
+index.php
+--------------------------------------
+<?php
+echo ?Hello ,This is docker ?;
+?>
+----------------------------------------------
+to create image
+docker build -t php-app .
+-----------------------------------------
+to run
+docker run php-app
+----------------------------------------------------------------
+Linux commands
+----------------------------
+1)ls -l (to view the list of files and folders)
+2)chmod 777 <filename>   (to change the file permission)
+--------------------------------------------------------------------------------------------------------------
+Docker + Tomcat + JSP
+--------------------------------------------
+mkdir jsp_app
+	Dockerfile
+webapp/
+	WEB-INF/
+	classes/
+	lib/
+	web.xml
+	index.jsp
+
+--------------------------------------------------------
+Dockerfile
+----------------------------------------
+FROM tomcat:9.0.1-jre8-alpine
+ADD ./webapp /usr/local/tomcat/webapps/webapp
+CMD ["catalina.sh","run"]
+
+---------------------------------------------------------
+index.jsp
+--------------------
+to create image
+docker build -t myjsp .
+
+---------------------------------------------
+to run
+docker run --rm -it -p 8888:8080 myjsp
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
