@@ -1,0 +1,80 @@
+Waterfall Model :-
+--------------------------------------------
+1)Requirements
+2)system design
+3)implementation
+4)Integration and testing
+5)Deployment of system(client system)
+6)Maintenance
+This process goes on for a long time .The feedback from the customer also comes after a long time.It may happen that the demand for the product may go done.
+
+Agile Model:-
+The design,development ,testing and releases are done frequently.the feedback is also received from the customer fequently.The demand of the product will not go down as frequently the  versions  are released.  
+
+Agile and Scrum
+------------------------------
+Agile encourages that a little of every thing ,include design ,development,and testing is done at the same time.
+The traditional approach to projects closes and completes one phase before the next begins.
+Agile encourages short,frequent feedback loops and encourages changes to requirements.
+
+
+In waterfall model the feedback is usually not collected until the end. 
+
+Scrum is a framework of Agile.
+------------------------------------------------------------------------
+1)It is lightweight
+2)Simple to understand
+3)Difficult to master.
+
+It is a framework within which people can address complex problems.
+This is to make the team productive ,creative and ready to deliver on time.
+It require team collaboration to meet the end points.
+
+The roles of scrum team
+-------------------------------------
+It consists of a Product owner,the development team and a scrum master.
+The scrum are self-organized and cross functional.
+The self organized is needed to see how best to accomplish there work.
+The cross functional because the team can do any task without depending on other.
+
+The scrum team is designed to optimize flexibility,creativity and productivity.
+
+The scrum events are
+------------------------------------
+1)sprint(module)
+2)sprint planning
+3)daily Scrum
+4)Sprint Review
+  
+
+Scrum is just one of the many iterative and incremental agile software development method. 
+
+In the SCRUM methodology a sprint is the basic unit of development. 
+
+Each sprint starts with a planning meeting, where the tasks for the sprint are identified and an estimated commitment for the sprint goal is made. 
+
+A Sprint ends with a review  meeting where the progress is reviewed and lessons for the next sprint are identified. 
+During each sprint, the team creates finished portions of a product.
+
+In the Agile methods each iteration involves a team working through a full software development cycle, including planning, requirements analysis, design, coding, unit testing, and acceptance testing when a working product is demonstrated to stakeholders.
+
+So if in a SCRUM sprint you perform all the software development phases (from requirement analysis to acceptance testing), and in my opinion you should, you can say SCRUM sprints correspond to AGILE iterations.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
