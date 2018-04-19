@@ -1,0 +1,113 @@
+step 1: https://github.com/angular/quickstart
+
+step 2: Unzip and rename
+
+step 3: npm install(creating node module)
+
+step 4:npm start
+---------------------------------------------------------------------------------------------
+step 5:we have (app.component.ts) modify it 
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: `app/app.component.html`,
+})
+export class AppComponent
+  { 
+     MyName :string=`Rahul`;
+  }
+
+
+step 6: create a page app.component.html
+---------------------------------------------------------------------
+<html>
+<h1>Employee Registration Page</h1><hr>
+
+ My Name is {{MyName}}<br>   
+<table>
+<tr><td><Label>Enter your Name</Label></td><td><input type="text" name="t1"></td></tr>
+<tr><td><Label>Enter your Email</Label></td><td><input type="email" name="t2"></td></tr>
+<tr><td><Label>Enter your Phone no</Label></td><td><input type="number" name="t3"></td></tr>
+<tr><td><Label>Enter your Address</Label></td><td><input type="text" name="t4"></td></tr>
+<tr><td><Label>Enter your Passwword</Label></td><td><input type="password" name="t5"></td></tr>
+<tr><td><input type="submit" value="submit"></td></tr>
+ 
+</table>
+ 
+</html>
+
+
+----------------------------------------Example 2---------------------------------------------------------------------------
+
+Module.ts
+--------------------
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent }  from './app.component';
+import {FormsModule} from '@angular/forms';
+import {Appview} from './view.component';
+import {Appcontact} from './contact.component';
+import {Apptrack} from './track.component';
+import {Appaddmodule} from './addmodule.component';
+
+import {RouterModule,Routes} from '@angular/router';
+
+const appRouters:Routes=[
+{ path:'View',component:Appview},
+{ path:'Contact',component:Appcontact},
+{ path:'Track',component:Apptrack},
+{ path:'AddModule',component:Appaddmodule},
+];
+
+@NgModule({
+  imports:      [ BrowserModule,RouterModule.forRoot(appRouters) ],
+  declarations: [ AppComponent,Appview,Appcontact,Apptrack,Appaddmodule ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+----------------------------------------------------------------------------------------------
+view.component.ts
+------------------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `<form>
+<h1>Track Module Page</h1><hr>
+
+ <table>
+<tr><td><Label>Enter your Name</Label></td><td><input type="text" name="t1"></td></tr>
+<tr><td><Label>Enter your Email</Label></td><td><input type="email" name="t2"></td></tr>
+<tr><td><Label>Enter your Phone no</Label></td><td><input type="number" name="t3"></td></tr>
+<tr><td><Label>Enter your Address</Label></td><td><input type="text" name="t4"></td></tr>
+<tr><td><Label>Enter your Passwword</Label></td><td><input type="password" name="t5"></td></tr>
+<tr><td><input type="submit" value="submit"></td></tr>
+ 
+</table>
+ </form> `
+})
+
+export class Apptrack
+{}
+-------------------------------------------------------------
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `WORKOUT TRACKER
+  <a [routerLink]="['/View']">ViewAll</a>
+  <a [routerLink]="['/Contact']">Contact</a>
+  <a [routerLink]="['/Track']">Track</a>
+  <a [routerLink]="['/AddModule']">AddModule</a>
+  <router-outlet></router-outlet>
+  `,
+})
+export class AppComponent
+  { 
+     
+  }
+------------------------------------------------------
+<router-outlet>  :- It is a placeholder to render the component based on which option the user have selected.
