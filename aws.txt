@@ -1,0 +1,64 @@
+AWS :- Amazon Web Services
+----------------------------------------------------------
+It is a cloud service from Amazon,which provides services in the form of building blocks,these building blocks can be  used to create and deploy any type of application in the cloud.
+
+These services or building blocks are designed to work with each other and result in application which are huge and highly scalable.
+
+There are different services provided by AWS.
+1)Compute 2)Storage 3)Database 4)Migration 5)Network and content Delivery.6)Management tools 7)Security 8)Messaging
+
+1)Under Compute service we have compute workloads.
+a)Elastic compute Cloud
+b)Lambda
+c)Elastic Beanstalk.
+ 
+2)Storage
+a)S3 (Simple Storage Service)
+b)Elastic Block Store
+c)Amazon Glacier
+d)AWS snowball
+
+3)Database
+a)Amazon Aurora
+b)Amazon RDS
+c)Amazon DynamoDB
+d)Amazon RedShift
+
+4)Migration
+a)AWS database Migration Service
+b)AWS SnowBall
+
+ 5)Network and content Delivery
+a)Amazon Route 53
+b)AWS CloudFront
+
+6)Management tools 
+a)AWS CloudWwatch
+b)AWS CloudFomation
+c)AWS CloudTrail
+
+7)Security 
+a)AWS IAM
+b)AWS KMS
+c)AWWS Shield
+
+8)Messaging
+a)Amazon SQS
+b)Amazon Pinpoint
+
+----------------------------------------------------------
+ Microservices are an architectural approach to software development where software is compose of small independent services that communicate over applications.
+
+Microservices achitectures make application easier to scale and faster to develop,enabling innovation and accelerating time to market for new features.
+
+With  microservices an application is built as independent components that run each application process as a service.
+The services are built for business capabilities and each services performs a single function.
+because each services are independent they can be updated ,deployed and scaled to meet demand for specific functions of an application.The code can be reusable.service independence increases as an application resist to failure.
+
+-------------------------------------------    
+Example :-
+
+1)users will use the service
+2)Thread service
+3)ports service  
+ 
