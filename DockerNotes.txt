@@ -91,6 +91,21 @@ GitHub ----->Developers check their source code ------>Jinkins will pick up the 
 https://jenkins-ci.org/
 
 
+--------------------------------------
+steps 1:- 
+Folder structure will be there in GIT.
+step 2:- push it to GITHUB
+
+step 3:- in jenkin you have to mention the path of you github.
+
+step 4:- pipeline :- paste the github link. (test cases in the angular.js /spec.ts)
+
+step 5:- build the project
+
+step 6:- Dashboard to view the result.
+
+* it is installed in the server .
+
 
 
 
